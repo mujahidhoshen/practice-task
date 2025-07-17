@@ -1,11 +1,62 @@
-div{
+.contaner{
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.box{
     background-color: blueviolet;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 3px solid rgb(0, 0, 0);
+    border-radius:10px;
+    border: 3px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    transition-duration: 0.5s;
 }
-div:hover{
+.box:hover{
     background-color: rgb(34, 34, 171);
-    border: red;
+    border: rgb(0, 255, 34);
+    font-size: 2em;
+}
+.contaner:hover{
+    background-color: gray;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.date{
+    background-color: rgb(255, 0, 242);
+    border-radius: 15px;
+    border: 3px solid black;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    width: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.day{
+    background-color: rgb(172, 176, 176);
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.calendar-contant{
+    column-gap: 10px;
 }
